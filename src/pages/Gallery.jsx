@@ -17,7 +17,7 @@ function Gallery() {
 				</div>
 				<br />
 
-				<div className='flex w-[83.5%] m-auto gap-7 md:hidden'>
+				<div className='flex w-[83.5%] m-auto gap-7 md:hidden sm:hidden'>
 					<div className=''>
 						<img
 							src={servicesImage}

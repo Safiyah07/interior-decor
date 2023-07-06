@@ -17,7 +17,7 @@ function Gallery() {
 				</div>
 				<br />
 
-				<div className='flex w-[83.5%] m-auto gap-7'>
+				<div className='flex w-[83.5%] m-auto gap-7 md:hidden'>
 					<div className=''>
 						<img
 							src={servicesImage}
@@ -55,7 +55,7 @@ function Gallery() {
 					</div>
 				</div>
 				<br />
-				<div className='flex w-[83.5%] m-auto gap-7'>
+				<div className='flex lg:w-[83.5%] m-auto gap-7 md:flex-wrap sm:flex-wrap'>
 					<div className=''>
 						<img
 							src={servicesImage3}
@@ -77,7 +77,7 @@ function Gallery() {
 							className='lg:h-[15vw]'
 						/>
 					</div>
-					<div className=''>
+					<div className='sm:hidden md:hidden'>
 						<img
 							src={servicesImage2}
 							alt='Service Img2'
@@ -89,7 +89,7 @@ function Gallery() {
 				<br />
 
 				<div className='flex justify-center'>
-					<button className='bg-grey text-off-white uppercase w-[20%] p-3 hover:scale-105 delay-75 duration-100'>
+					<button className='bg-grey text-off-white uppercase lg:w-[20%] md:w-[30%] sm:w-[35%] p-3 hover:scale-105 delay-75 duration-100'>
 						See More
 					</button>
 				</div>

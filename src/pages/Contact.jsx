@@ -6,17 +6,17 @@ function Contact() {
 			<div className='pt-20' id="contact">
 				<div className='bg-services-image3 bg-fixed bg-no-repeat bg-center bg-cover h-[50vh] sm:h-[30vh] w-full'>
 					<div className='pt-12 sm:pt-8 md:px-8'>
-						<div className='uppercase text-off-white text-center font-bold pb-8 lg:text-xl md:text-lg sm:text-sm'>
+						<div className='text-off-white text-center pb-8 lg:text-xl md:text-lg sm:text-sm'>
 							<h1 className=' tracking-wider'>Sign up for company news</h1>
 							<p>You will recieve notifications about company news</p>
 
 							<div className='flex justify-center pt-16 sm:pt-8'>
 								<input
 									type='text'
-									placeholder='E-MAIL'
+									placeholder='E-mail'
 									className='p-4 w-1/2'
 								/>
-								<button className='bg-grey text-off-white uppercase w- p-3'>
+								<button className='bg-grey text-off-white p-3 hover:scale-105 delay-75 duration-100'>
 									Subscribe
 								</button>
 							</div>

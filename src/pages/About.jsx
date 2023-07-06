@@ -39,7 +39,7 @@ function About() {
 						<img
 							src={aboutImage}
 							alt='About Img'
-							className='h-[50vh] w-2/2 lg:mr-[31rem]'
+							className='lg:h-[50vh] sm:w-full lg:mr-[31rem]'
 						/>
 					</div>
 				</div>

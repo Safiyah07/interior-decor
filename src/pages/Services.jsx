@@ -1,6 +1,6 @@
-import servicesImage from '../assets/FoodPic1.jpg'
-import servicesImage2 from '../assets/FoodPic2.jpg'
-import servicesImage3 from '../assets/FoodPic3.jpg'
+import servicesImage from '../assets/services-image.jpg'
+import servicesImage2 from '../assets/services-image2.jpg'
+import servicesImage3 from '../assets/services-image3.jpg'
 
 function Services() {
 	return (
@@ -21,14 +21,14 @@ function Services() {
 						<img
 							src={servicesImage}
 							alt='Service Img'
-              className='lg:w-[30vw]'
+              className='lg:h-[15vw]'
 						/>
 					</div>
 					<div className=''>
 						<img
 							src={servicesImage2}
 							alt='Second Service Img'
-              className='lg:w-[30vw]'
+              className='lg:h-[15vw]'
 						/>
 					</div>
 
@@ -36,7 +36,7 @@ function Services() {
 						<img
 							src={servicesImage3}
 							alt='Third Service Img'
-              className='lg:w-[30vw]'
+              className='lg:h-[15vw]'
 						/>
 					</div>
 				</div>

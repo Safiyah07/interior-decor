@@ -61,15 +61,13 @@ function Navbar() {
 					}
 				>
 					<div
-						className={
-							showMenu
+						className={showMenu
 								? 'flex justify-between items-center py-4 tracking-wider'
-								: `{
-										navbarBg === true
-											? 'bg-inherit'
-											: 'bg-off-white text-grey border-b-gray-200'
-								  } flex justify-between items-center py-4 tracking-wider`
-						}
+								: `${
+									navbarBg === true
+										? 'bg-inherit'
+										: 'bg-off-white text-grey border-b-gray-200'
+								} flex justify-between items-center py-4 tracking-wider`}
 					>
 						<h1 className='lg:text-3xl md:text-2xl sm:text-2xl font-bold lg:ml-[6.2rem] md:ml-10 sm:ml-4 cursor-pointer'>
 							<a href='#main'>Interior</a>
@@ -82,12 +80,7 @@ function Navbar() {
 										key={menu.id}
 										className='capitalize hover:scale-110 delay-75 duration-100'
 									>
-										<a
-											href={`#${menu.title}`}
-											className='capitalize hover:scale-110 delay-75 duration-100'
-										>
-											{menu.title}
-										</a>
+										<a href={`#${menu.title}`}>{menu.title}</a>
 									</li>
 								))}
 							</ul>
@@ -103,15 +96,13 @@ function Navbar() {
 
 					<ul
 						onClick={menuDisplay}
-						className={
-							showMenu
+						className={showMenu
 								? 'hidden'
-								: `{
-										navbarBg === true
-											? 'bg-inherit'
-											: 'bg-off-white text-grey border-b-gray-200'
-								  } transition ease-in-out delay-150 duration-300 lg:hidden`
-						}
+								: `${
+									navbarBg === true
+										? 'bg-inherit'
+										: 'bg-off-white text-grey border-b-gray-200'
+								} transition ease-in-out delay-150 duration-300 lg:hidden`}
 					>
 						{menuItem.map((menu) => (
 							<a

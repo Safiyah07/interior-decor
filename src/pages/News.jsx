@@ -4,7 +4,7 @@ function News() {
 	return (
 		<>
 			<div
-				className='pt-24 md:px-8'
+				className='pt-24 lg:pl-28 md:px-8'
 				id='news'
 			>
 				<div className='text-center font-bold'>

@@ -34,10 +34,12 @@ function About() {
 						</button>
 					</div>
 					{/* <div className='bg-grey bg-about-image bg-fixed bg-no-repeat bg-right bg-cover h-[50vh] w-full lg:mr-[29rem]'> */}
-					<div className='bg-grey h-[40vh] sm:h-[30vh] w-full lg:mr[29rem]'>
+					{/* <div className='bg-grey sm:h-[30vh] lg:mr[29rem]'> */}
+					<div className=''>
 						<img
 							src={aboutImage}
 							alt='About Img'
+							className='h-[50vh] w-2/2 lg:mr-[31rem]'
 						/>
 					</div>
 				</div>

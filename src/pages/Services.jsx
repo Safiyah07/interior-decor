@@ -1,6 +1,6 @@
-import servicesImage from '../assets/services-image.jpg'
-import servicesImage2 from '../assets/services-image2.jpg'
-import servicesImage3 from '../assets/services-image3.jpg'
+import servicesImage from '../assets/foodPic1.jpg'
+import servicesImage2 from '../assets/foodPic2.jpg'
+import servicesImage3 from '../assets/foodPic3.jpg'
 
 function Services() {
 	return (

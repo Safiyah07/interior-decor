@@ -14,21 +14,13 @@ function App() {
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 0.7 }}
+				transition={{ duration: 1 }}
 			>
 				<Main />
 			</motion.div>
-			{/* <motion.div
-				initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<About />
-			</motion.div> */}
 			<motion.div
-				initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+				initial={{ opacity: 0, y: '20%' }}
+				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
 			>
@@ -36,7 +28,7 @@ function App() {
 			</motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: '20%' }}
-        whileInView={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
 			>
@@ -44,7 +36,7 @@ function App() {
 			</motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: '20%' }}
-        whileInView={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
 			>
@@ -52,7 +44,7 @@ function App() {
 			</motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: '20%' }}
-        whileInView={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
 			>
@@ -60,7 +52,7 @@ function App() {
 			</motion.div>
 			<motion.div
 				initial={{ opacity: 0, y: '20%' }}
-        whileInView={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}
 				viewport={{ once: true }}
 			>

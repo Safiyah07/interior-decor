@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { IoMenu, IoClose } from 'react-icons/io5'
+import { motion } from 'framer-motion'
 
 function Navbar() {
 	const menuItem = [
@@ -61,13 +62,16 @@ function Navbar() {
 					}
 				>
 					<div
-						className={showMenu
+						className={
+							showMenu
 								? 'flex justify-between items-center py-4 tracking-wider'
-								: `${
-									navbarBg === true
-										? 'bg-inherit'
-										: 'bg-off-white text-grey border-b-gray-200'
-								} flex justify-between items-center py-4 tracking-wider`}
+								: `
+									${
+										navbarBg === true
+											? 'bg-inherit'
+											: 'bg-off-white text-grey border-b-gray-200 transition-all ease-in-out'
+									} flex justify-between items-center py-4 tracking-wider`
+						}
 					>
 						<h1 className='lg:text-3xl md:text-2xl sm:text-2xl font-bold lg:ml-[6.2rem] md:ml-10 sm:ml-4 cursor-pointer'>
 							<a href='#main'>Interior</a>
@@ -94,27 +98,36 @@ function Navbar() {
 						</div>
 					</div>
 
-					<ul
-						onClick={menuDisplay}
-						className={showMenu
-								? 'hidden'
-								: `${
-									navbarBg === true
-										? 'bg-inherit'
-										: 'bg-off-white text-grey border-b-gray-200'
-								} transition ease-in-out delay-150 duration-300 lg:hidden`}
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 1 }}
 					>
-						{menuItem.map((menu) => (
-							<a
-								key={menu.id}
-								href={`#${menu.title}`}
-							>
-								<li className='md:px-10 sm:px-4 py-4 capitalize border border-b-gray-100 border-t-gray-100'>
-									{menu.title}
-								</li>
-							</a>
-						))}
-					</ul>
+						<ul
+							onClick={menuDisplay}
+							className={
+								showMenu
+									? 'hidden'
+									: `
+										${
+											navbarBg === true
+												? 'bg-inherit'
+												: 'bg-off-white text-grey border-b-gray-200'
+										} lg:hidden`
+							}
+						>
+							{menuItem.map((menu) => (
+								<a
+									key={menu.id}
+									href={`#${menu.title}`}
+								>
+									<li className='md:px-10 sm:px-4 py-4 capitalize border border-b-gray-100 border-t-gray-100'>
+										{menu.title}
+									</li>
+								</a>
+							))}
+						</ul>
+					</motion.div>
 				</div>
 			</div>
 		</>

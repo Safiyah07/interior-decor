@@ -4,7 +4,7 @@ function Main() {
 			<div>
 				<div
 					id='main'
-					className='bg-hero-image bg-no-repeat bg-bottom bg-cover h-[95vh] w-full'
+					className='bg-hero-image bg-no-repeat bg-bottom bg-cover lg:h-[99vh] md:h-[98vh] sm:h-[95vh] w-full'
 				>
 					<div className='flex md:justify-center sm:justify-center items-end h-full'>
 						<div className='glass-effect z-0 lg:w-[40%] md:w-[87.5%] md:m-auto sm:w-[89%] sm:m-auto px-8 py-6 uppercase flex flex-col justify-center items-center text-off-white text-center tracking-wider'>

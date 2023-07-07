@@ -1,5 +1,3 @@
-// import globeImage from '../assets/globe-image.jpg'
-
 function News() {
 	return (
 		<>
@@ -14,12 +12,8 @@ function News() {
 				<br />
 
 				<div className='grid md:gap-2 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1'>
-					<div className='bg-grey bg-news-image bg-no-repeat bg-bottom bg-cover h-[40vh] w-full lg:pl-10 lg:pr-2'>
-						{/* <img
-							src={globeImage}
-							alt='Globe Img'
-						/> */}
-					</div>
+					<div className='bg-grey bg-news-image bg-no-repeat bg-bottom bg-cover h-[40vh] w-full lg:pl-10 lg:pr-2'></div>
+					
 					<br className='lg:hidden' />
 					<div className='lg:col-span-2 lg:w-[80%] lg:ml-14 md:text-center sm:text-center'>
 						<p>

@@ -33,6 +33,7 @@ function About() {
 							More
 						</button>
 					</div>
+					
 					<div className=''>
 						<img
 							src={aboutImage}

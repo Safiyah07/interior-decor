@@ -14,7 +14,12 @@ function Main() {
 							<br />
 							<p>Choose something new for yourself</p>
 							<br />
-							<a href='#gallery' className='bg-grey w-1/3 p-3 hover:scale-105 delay-75 duration-100 uppercase'>More</a>
+							<a
+								href='#gallery'
+								className='bg-grey w-1/3 p-3 hover:scale-105 delay-75 duration-100 uppercase'
+							>
+								More
+							</a>
 						</div>
 					</div>
 				</div>

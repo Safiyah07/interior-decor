@@ -89,10 +89,11 @@ function Gallery() {
 				<br />
 
 				<div className='flex justify-center'>
-					<a href='#services' className='bg-grey text-off-white uppercase lg:w-[20%] md:w-[30%] sm:w-[35%] p-3 hover:scale-105 delay-75 duration-100 flex justify-center'>
-						{/* <button className='bg-grey text-off-white uppercase lg:w-[20%] md:w-[30%] sm:w-[35%] p-3 hover:scale-105 delay-75 duration-100'> */}
-							See More
-						{/* </button> */}
+					<a
+						href='#services'
+						className='bg-grey text-off-white uppercase lg:w-[20%] md:w-[30%] sm:w-[35%] p-3 hover:scale-105 delay-75 duration-100 flex justify-center'
+					>
+						See More
 					</a>
 				</div>
 			</div>

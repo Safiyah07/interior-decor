@@ -29,11 +29,13 @@ function About() {
 							error voluptatum.
 						</p>
 						<br />
-						<button className='bg-grey text-off-white uppercase w-1/3 p-3 hover:scale-105 delay-75 duration-100'>
-							More
-						</button>
+						<a href='#news'>
+							<button className='bg-grey text-off-white uppercase w-1/3 p-3 hover:scale-105 delay-75 duration-100'>
+								More
+							</button>
+						</a>
 					</div>
-					
+
 					<div className=''>
 						<img
 							src={aboutImage}

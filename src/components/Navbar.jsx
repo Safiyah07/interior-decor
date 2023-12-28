@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { IoMenu, IoClose } from 'react-icons/io5'
 import { motion } from 'framer-motion'
 
@@ -6,7 +7,7 @@ function Navbar() {
 	const menuItem = [
 		{
 			id: 1,
-			title: 'main',
+			title: 'home',
 		},
 		{
 			id: 2,
@@ -18,14 +19,6 @@ function Navbar() {
 		},
 		{
 			id: 4,
-			title: 'news',
-		},
-		{
-			id: 5,
-			title: 'gallery',
-		},
-		{
-			id: 6,
 			title: 'contact',
 		},
 	]
@@ -73,24 +66,30 @@ function Navbar() {
 									} flex justify-between items-center py-4 tracking-wider`
 						}
 					>
-						<h1 className='lg:text-3xl md:text-2xl sm:text-2xl font-bold lg:ml-[6.2rem] md:ml-10 sm:ml-4 cursor-pointer'>
-							<a href='#main'>Interior</a>
+						<h1 className='lg:text-3xl md:text-2xl sm:text-2xl font-bold lg:ml-[4rem] md:ml-10 sm:ml-4 cursor-pointer'>
+							<a href='#main'>Nanny</a>
 						</h1>
 
 						<div className=''>
-							<ul className='flex gap-10 text-lg lg:mr-60 md:hidden sm:hidden'>
+							<ul className='flex gap-10 text-lg capitalize lg:mr-[4rem] md:hidden sm:hidden'>
 								{menuItem.map((menu) => (
 									<li
 										key={menu.id}
-										className='capitalize hover:scale-110 delay-75 duration-100'
+										className='duration-100 delay-75 hover:text-grey hover:font-semibold'
 									>
 										<a href={`#${menu.title}`}>{menu.title}</a>
 									</li>
 								))}
+								<li className='duration-100 delay-75 hover:text-grey hover:font-semibold'>
+									<Link to='/login'>login</Link>
+								</li>
+								<li className='duration-100 delay-75 hover:text-grey hover:font-semibold'>
+									<Link to='/register'>register</Link>
+								</li>
 							</ul>
 
 							<div
-								className='md:mr-10 sm:mr-4 cursor-pointer lg:hidden'
+								className='cursor-pointer md:mr-10 sm:mr-4 lg:hidden'
 								onClick={menuDisplay}
 							>
 								{showMenu ? <IoMenu size={30} /> : <IoClose size={30} />}
@@ -121,7 +120,7 @@ function Navbar() {
 									key={menu.id}
 									href={`#${menu.title}`}
 								>
-									<li className='md:px-10 sm:px-4 py-4 capitalize border border-b-gray-100 border-t-gray-100'>
+									<li className='py-4 capitalize border md:px-10 sm:px-4 border-b-gray-100 border-t-gray-100'>
 										{menu.title}
 									</li>
 								</a>

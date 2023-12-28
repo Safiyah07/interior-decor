@@ -1,63 +1,58 @@
-import { motion } from 'framer-motion'
+import './index.css'
+import {
+	createBrowserRouter,
+	createRoutesFromElements,
+	Route,
+	Outlet,
+	RouterProvider,
+} from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Main from './pages/Main'
-import About from './pages/About'
-import Services from './pages/Services'
-import News from './pages/News'
-import Gallery from './pages/Gallery'
-import Contact from './pages/Contact'
+import Landing from './pages/Landing'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import NotFound from './pages/NotFound';
 
 function App() {
+	const router = createBrowserRouter(
+		createRoutesFromElements(
+			<Route
+				path='/'
+				element={<Root />}
+			>
+				<Route
+					index
+					element={<Landing />}
+				/>
+				<Route
+					path='/login'
+					element={<Login />}
+				/>
+				<Route
+					path='/register'
+					element={<Register />}
+				/>
+				<Route
+					path='/*'
+					element={<NotFound />}
+				/>
+			</Route>
+		)
+	)
+
 	return (
 		<>
-			<Navbar className='z-20 relative' />
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-			>
-				<Main />
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0, y: '20%' }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<About />
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0, y: '20%' }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<Services />
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0, y: '20%' }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<News />
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0, y: '20%' }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<Gallery />
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0, y: '20%' }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1 }}
-				viewport={{ once: true }}
-			>
-				<Contact />
-			</motion.div>
+			<RouterProvider router={router} />
+		</>
+	)
+}
+
+export const Root = () => {
+	return (
+		<>
+			<div className=''>
+				<Navbar className='relative z-20' />
+				<Outlet />
+			</div>
 		</>
 	)
 }

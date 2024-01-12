@@ -6,7 +6,7 @@ function Navbar() {
 	const menuItem = [
 		{
 			id: 1,
-			title: 'main',
+			title: 'main', 
 		},
 		{
 			id: 2,
@@ -82,7 +82,7 @@ function Navbar() {
 								{menuItem.map((menu) => (
 									<li
 										key={menu.id}
-										className='capitalize hover:scale-110 delay-75 duration-100'
+										className='capitalize duration-100 delay-75 hover:scale-110'
 									>
 										<a href={`#${menu.title}`}>{menu.title}</a>
 									</li>
@@ -90,7 +90,7 @@ function Navbar() {
 							</ul>
 
 							<div
-								className='md:mr-10 sm:mr-4 cursor-pointer lg:hidden'
+								className='cursor-pointer md:mr-10 sm:mr-4 lg:hidden'
 								onClick={menuDisplay}
 							>
 								{showMenu ? <IoMenu size={30} /> : <IoClose size={30} />}
@@ -121,7 +121,7 @@ function Navbar() {
 									key={menu.id}
 									href={`#${menu.title}`}
 								>
-									<li className='md:px-10 sm:px-4 py-4 capitalize border border-b-gray-100 border-t-gray-100'>
+									<li className='py-4 capitalize border md:px-10 sm:px-4 border-b-gray-100 border-t-gray-100'>
 										{menu.title}
 									</li>
 								</a>
